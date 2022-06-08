@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title> 💬 Chat room App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<br>
+				<h1> Chat Room 💬</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div>
+						<label for="username">Nick Name</label>
+						<input class="form-control" 
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div>
+						<label for="room">Join News Room</label>
+						<select name="room" id="room" class="form-control">
+							<option value="Techupdate">Tech Update </option>
+							<option value="EnvironmentNews">Environment Update</option>
+							<option value="CryptoNews">Crypto Currency Update</option>
+							<option value="ShareMarket">Share Market Update</option>
+							<option value="EntertainmentNews">Entertainment Update</option>	
+						</select>
+					</div>
+					<button type="submit" class="btn btn-warning">Join Chat</button>
+				</form>
+				<br><br>
+			</main>
+		</div>
+	</body>
+</html>
