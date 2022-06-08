@@ -75,7 +75,8 @@ function outputUsers(users) {
   userList.innerHTML = '';
   users.forEach((user) => {
     const li = document.createElement('li');
-    li.innerText = "😋"+user.username;
+    li.className = "liUsers";
+    li.innerText = "🤖 "+user.username;
     userList.appendChild(li);
   });
 }

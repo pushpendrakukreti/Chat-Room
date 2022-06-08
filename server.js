@@ -28,7 +28,7 @@ io.on('connection', socket => {
 
     // Welcome current user
     socket.emit('message', formatMessage(botName, 'Hi ' + username + 
-    ', Welcome to 💬 Chatroom. \nStart a conversation here people will join later🙂.'));
+    ', Welcome to 💬 Chatroom! \nStart a conversation here people will join later🙂'));
 
 
     // Broadcast when a user connects

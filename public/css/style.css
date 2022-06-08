@@ -21,6 +21,7 @@ body {
 	/* margin: 20px; */
 	/* background-color: pink; */
 	background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url("../images/chatbot.jpg");
+	background-size: cover;
 }
 
 ul {
@@ -40,7 +41,7 @@ a {
 	font-size: 17px;
 	background-color: #ffc107;
 	color: black;
-	border-radius: 30px;
+	border-radius: 5px;
 }
 
 /* Chat Page */
@@ -62,19 +63,19 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #0b7fab;
+	background-color: darkcyan;
 	;
 }
 
 .chat-main {
-	background-color: #0b7fab;
+	background-color: darkcyan;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	height: 400px;
 }
 
 .chat-sidebar {
-	background-color: #0b7fab;
+	background-color: darkcyan;
 	color: #fff;
 	padding: 20px 20px 60px;
 	overflow-y: auto;
@@ -149,21 +150,22 @@ a {
 
 .chat-form-container {
 	padding: 20px 30px;
-	background-color: #0b7fab;
+	background-color: darkcyan;
 }
 
 .chat-form-container form {
 	display: flex;
-	width: 80%;
+	width: 78%;
 	text-align: right;
 	flex-direction: row-reverse;
-	margin-left: 22%;
+	margin-left: 24%;
 }
 
 .chat-form-container input[type='text'] {
 	margin-left: 1%;
 	font-size: 16px;
-	padding: 5px;
+	font-weight: bold;
+	padding: 15px;
 	height: 40px;
 	flex: 1;
 	border-radius: 5px;
@@ -173,18 +175,17 @@ a {
 .chat-form-container button {
 	border: #0b7fab;
 	border-radius: 5px;
-
 }
 
 /* Join Page */
 .join-container {
 	max-width: 500px;
-	margin: 80px auto;
+	margin: 14vh auto;
 	color: #fff;
 }
 
 .join-header {
-	background: #0b7fab;
+	background: darkcyan;
 	text-align: center;
 	padding: 20px;
 	/* background: var(--dark-color-a); */
@@ -193,8 +194,11 @@ a {
 }
 
 .join-main {
-	background: #0b7fab;
+	background: darkcyan;
 	padding: 30px 40px;
+	font-size: larger;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
 }
 
 .join-main p {
@@ -203,6 +207,9 @@ a {
 
 .join-main .form-control {
 	margin-bottom: 20px;
+	width: 60% !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
 }
 
 .join-main label {
@@ -237,4 +244,10 @@ a {
 	.chat-sidebar {
 		display: none;
 	}
+}
+
+.liUsers{
+	font-size: 105%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
 }
